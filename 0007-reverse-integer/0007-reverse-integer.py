@@ -8,5 +8,5 @@ class Solution:
         
         if ((-(2**31)) > num or num > ((2**31)-1)):
             return 0
-        else: return num
+        return num
         
