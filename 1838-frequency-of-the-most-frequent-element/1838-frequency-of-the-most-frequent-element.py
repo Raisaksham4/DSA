@@ -6,10 +6,9 @@ class Solution:
         max_freq=0
 
         for right in range(len(nums)):
-            target=nums[right]
             window_sum += nums[right]
-            
-            while target * (right-left+1) - window_sum > k:
+
+            while nums[right] * (right-left+1) - window_sum > k:
                 window_sum -= nums[left]
                 left += 1
 
